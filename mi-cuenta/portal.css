@@ -1,0 +1,66 @@
+/* Portal de alumnas — misma base visual que la demo Estudio Ritmo */
+body.subpage { background: var(--mist); padding-top: 72px; }
+body.subpage .site-header { background: rgba(36, 16, 43, .92); backdrop-filter: saturate(1.4) blur(14px); box-shadow: 0 1px 0 rgba(255,255,255,.08); }
+
+.portal { padding: 36px 0 96px; }
+.portal-wrap { max-width: 640px; }
+.portal-kicker { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--coral); }
+.portal h1 { font-size: clamp(32px, 7vw, 48px); margin-top: 8px; }
+.portal-lead { margin-top: 14px; color: var(--ink-soft); max-width: 46ch; }
+
+.demo-banner { margin-top: 28px; background: #fff; border-radius: 20px; padding: 18px 18px 16px; box-shadow: 0 0 0 1px var(--line); }
+.demo-banner p { font-size: 14.5px; color: var(--ink-soft); }
+.demo-banner strong { color: var(--ink); }
+.dni-hints { display: grid; gap: 8px; margin-top: 14px; }
+.hint { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 52px; padding: 0 14px; border: 0; border-radius: 14px; background: var(--mist); font: 700 15px/1 var(--font); color: var(--ink); font-variant-numeric: tabular-nums; text-align: left; box-shadow: inset 0 0 0 1.5px transparent; transition: background .2s, box-shadow .2s; }
+.hint:hover, .hint:focus-visible { background: #fff; box-shadow: inset 0 0 0 1.5px var(--coral); }
+.hint .badge { flex: 0 0 auto; }
+
+.badge-late { background: #FDE8E8; color: #B42318; }
+
+.dni-form { margin-top: 22px; }
+.dni-form label { display: block; font-weight: 700; font-size: 14px; margin-bottom: 8px; }
+.dni-row { display: grid; grid-template-columns: 1fr auto; gap: 10px; }
+.dni-form input { width: 100%; height: 52px; border-radius: 999px; border: 1.5px solid var(--line); padding: 0 18px; font-size: 16px; background: #fff; font-variant-numeric: tabular-nums; }
+.dni-form input:focus { outline: none; border-color: var(--coral); box-shadow: 0 0 0 4px rgba(255,77,94,.15); }
+.form-error { margin-top: 10px; font-size: 14px; font-weight: 600; color: #B42318; }
+@media (max-width: 520px) { .dni-row { grid-template-columns: 1fr; } }
+
+.portal-account { margin-top: 22px; }
+.portal-account .account-head { align-items: flex-start; }
+.account-actions { margin-left: auto; align-self: start; }
+.btn-text { border: 0; background: none; color: var(--ink-soft); font: 600 12px/1 var(--font); padding: 6px 0; white-space: nowrap; }
+.btn-text:hover { color: var(--ink); text-decoration: underline; text-underline-offset: .18em; }
+
+.stat { padding: 18px 0; border-bottom: 1px solid var(--line); }
+.stat-label { font-size: 13px; font-weight: 600; color: var(--ink-soft); }
+.stat-value { margin-top: 4px; font-size: 22px; font-weight: 800; letter-spacing: -0.03em; }
+.stat-value b { color: var(--coral); }
+.meter { margin-top: 12px; height: 8px; border-radius: 8px; background: var(--line); overflow: hidden; }
+.meter i { display: block; height: 100%; background: var(--coral); border-radius: 8px; }
+
+.portal-account .fee-row { padding: 18px 0; }
+.fee-note { display: block; font-size: 13px; color: var(--ink-soft); font-weight: 500; margin-top: 2px; }
+
+.reservas { padding: 18px 0 8px; }
+.reservas h2 { font-size: 16px; letter-spacing: 0; font-stretch: 100%; font-variation-settings: "wdth" 100; }
+.reservas ul { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 8px; }
+.reservas li { display: grid; grid-template-columns: 92px 1fr; gap: 12px; align-items: center; padding: 12px 14px; border-radius: 14px; background: var(--mist); }
+.reservas .when { font-weight: 800; font-size: 14px; letter-spacing: -0.02em; }
+.reservas .when small { display: block; font-weight: 600; color: var(--ink-soft); font-size: 12px; }
+.reservas .what { font-weight: 700; font-size: 15px; }
+.reservas .what small { display: block; font-weight: 500; color: var(--ink-soft); font-size: 13px; }
+.empty { color: var(--ink-soft); font-size: 14.5px; margin-top: 8px; }
+
+body.logged-in .dni-form { display: none; }
+
+body.logged-in .portal { padding-top: 20px; padding-bottom: 72px; }
+body.logged-in .portal-lead { display: none; }
+body.logged-in .portal h1 { font-size: clamp(26px, 6vw, 34px); }
+body.logged-in .demo-banner { padding: 12px 14px; margin-top: 16px; }
+body.logged-in .demo-banner p { font-size: 13px; }
+body.logged-in .dni-hints { gap: 6px; }
+body.logged-in .hint { min-height: 44px; font-size: 14px; }
+body.logged-in .portal-account { margin-top: 16px; }
+
+.portal-account .account-head span { white-space: nowrap; }

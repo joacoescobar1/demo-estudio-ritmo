@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Portal de alumnas · Estudio Ritmo</title>
+  <meta name="description" content="Entrá con tu DNI y mirá tu plan, cuántas clases te quedan, cuándo vence la cuota y tus reservas. Sitio demo creado por Nodo Ventas.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#24102B">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="portal.css">
+</head>
+<body class="subpage">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header solid" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="../" aria-label="Estudio Ritmo, inicio">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#FF4D5E"/><rect x="15" y="26" width="8" height="22" rx="4" fill="#fff"/><rect x="28" y="14" width="8" height="34" rx="4" fill="#fff"/><rect x="41" y="22" width="8" height="26" rx="4" fill="#24102B"/></svg>
+        <span class="brand-name">Estudio Ritmo</span>
+      </a>
+      <a class="demo-tag" href="../oferta/" title="Sitio demo hecho por Nodo Ventas">Demo</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú"><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="../#clases">Clases</a>
+        <a href="../#horarios">Horarios</a>
+        <a href="../#cuota">Cuota</a>
+        <a href="./" aria-current="page">Mi cuenta</a>
+        <a class="nav-cta" href="../#horarios">Reservar clase</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="portal">
+    <div class="wrap portal-wrap">
+      <p class="portal-kicker">Portal de alumnas</p>
+      <h1>Entrá con tu DNI y mirá tu mes</h1>
+      <p class="portal-lead">Ves tu plan, cuántas clases te quedan, cuándo vence la cuota y las reservas que tenés. Si te falta pagar, lo hacés acá mismo.</p>
+
+      <aside class="demo-banner" aria-label="Datos de la demo">
+        <p><strong>Esto es una demo.</strong> Los datos son de ficción. Probá con estos DNI:</p>
+        <div class="dni-hints">
+          <button type="button" class="hint" data-dni="30111222">30.111.222 <span class="badge badge-ok">Al día</span></button>
+          <button type="button" class="hint" data-dni="30222333">30.222.333 <span class="badge badge-pend">Vence pronto</span></button>
+          <button type="button" class="hint" data-dni="30333444">30.333.444 <span class="badge badge-late">Vencida</span></button>
+        </div>
+      </aside>
+
+      <form id="login-form" class="dni-form">
+        <label for="dni">Tu DNI</label>
+        <div class="dni-row">
+          <input id="dni" name="dni" inputmode="numeric" autocomplete="off" required placeholder="30.111.222" aria-describedby="dni-error">
+          <button class="btn btn-coral" type="submit">Ingresar</button>
+        </div>
+        <p class="form-error" id="dni-error" hidden>No encontramos ese DNI. En la demo usá uno de los tres de arriba.</p>
+      </form>
+
+      <section id="account-panel" class="account portal-account" hidden aria-live="polite"></section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <span class="brand-name">Estudio Ritmo</span>
+        <p>Zumba, ritmos latinos y dance fitness.</p>
+      </div>
+      <div class="made-by">
+        <span>Sitio demo diseñado por</span>
+        <a href="../oferta/" aria-label="Nodo Ventas, ver la oferta"><img src="../img/nodo/nodo-ventas-logo-blanco.svg" alt="Nodo Ventas" width="150" height="25"></a>
+        <a class="made-link" href="../oferta/">Quiero una web así para mi estudio</a>
+      </div>
+    </div>
+    <p class="wrap legal">Estudio Ritmo es un estudio de ficción creado por Nodo Ventas para mostrar el servicio. Fotos: Unsplash (ver <a href="../CREDITS.md">créditos</a>).</p>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/5491100000000?text=Hola%21%20Quiero%20reservar%20una%20clase%20de%20prueba" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.7 1.9 6.7L3 29l6.9-2.1c1.9 1 4 1.6 6.1 1.6 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.2c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.2 1.2-4-.3-.4a10.4 10.4 0 0 1-1.6-5.6C5.4 9.9 10.1 5.3 16 5.3s10.6 4.6 10.6 10.3S21.9 26.2 16 26.2zm5.8-7.7c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 2.9 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <div class="modal" id="modal-pago" hidden>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="pago-titulo">
+      <button class="sheet-x" type="button" data-close aria-label="Cerrar">×</button>
+      <div id="pago-form">
+        <h2 id="pago-titulo">Cuota de noviembre</h2>
+        <p class="pay-amount">$18.000</p>
+        <p class="class-resume" id="pago-resumen">Plan 8 clases · Estudio Ritmo</p>
+        <fieldset class="pay-methods">
+          <legend>Medio de pago</legend>
+          <label><input type="radio" name="pm" checked> Dinero en cuenta de Mercado Pago</label>
+          <label><input type="radio" name="pm"> Tarjeta de débito o crédito</label>
+        </fieldset>
+        <button class="btn btn-mp btn-block" type="button" id="btn-pagar">Pagar $18.000</button>
+        <p class="fine-print">Simulación de demo: no se abre un checkout real ni se cobra nada.</p>
+      </div>
+      <div id="pago-ok" hidden>
+        <div class="ok-head">
+          <span class="ok-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><h2>Pago aprobado</h2><p class="class-resume">La cuota quedó acreditada en tu cuenta.</p></div>
+        </div>
+        <button class="btn btn-ink btn-block" type="button" data-close>Volver</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="portal.js"></script>
+</body>
+</html>
