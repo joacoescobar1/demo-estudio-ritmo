@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estudio Ritmo · Zumba y Danza — Demo de Nodo Ventas</title>
+  <meta name="description" content="Demo de una web para un estudio de Zumba y danza: horarios, reserva de lugar, cuotas y WhatsApp. Hecha por Nodo Ventas. Este estudio es de ficción.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;650;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div class="demo-ribbon">Sitio de demostración · Estudio Ritmo es un estudio de ficción · No es un local real</div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio">
+        <span class="brand-mark" aria-hidden="true">ER</span>
+        <span class="brand-text">
+          <strong>Estudio Ritmo</strong>
+          <span>Zumba & Danza</span>
+        </span>
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#horarios">Horarios</a>
+        <a href="#cuotas">Cuotas</a>
+        <a href="#galeria">Galería</a>
+        <a href="#preguntas">Preguntas</a>
+        <a class="nav-cta" href="oferta/">Ver la oferta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-orbit" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="hero-kicker">Clases · Turnos · Cuotas</p>
+        <h1>El ritmo se <em>reserva</em> desde el celular.</h1>
+        <p class="hero-lead">Así puede verse la web de tu estudio: horarios claros, un botón para reservar lugar y las cuotas a un toque. Esta es una demo, no un local real.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#horarios">Ver horarios y reservar</a>
+          <a class="btn btn-ghost" href="oferta/">Quiero una web así</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat"><b>12</b><span>clases por semana</span></div>
+        <div class="stat"><b>18</b><span>lugares por clase</span></div>
+        <div class="stat"><b>1 toque</b><span>para anotar a una alumna</span></div>
+      </div>
+    </div>
+
+    <section id="horarios">
+      <div class="wrap">
+        <p class="section-kicker">Agenda</p>
+        <h2 class="section-title">Horarios de esta semana</h2>
+        <p class="section-lead">Elegí una clase y reservá el lugar. El nombre y el WhatsApp quedan guardados en este celular (es una demo, no se envía a ningún servidor).</p>
+        <div class="schedule" id="schedule"></div>
+      </div>
+    </section>
+
+    <section id="cuotas">
+      <div class="wrap cuotas-grid">
+        <div>
+          <p class="section-kicker">Cuotas</p>
+          <h2 class="section-title">El mes, a la vista</h2>
+          <p class="section-lead">La alumna ve si ya pagó o si le queda la cuota pendiente, y paga con Mercado Pago sin pasar por la caja.</p>
+          <div class="panel">
+            <div class="alumna">
+              <div class="avatar" aria-hidden="true">LM</div>
+              <div>
+                <strong>Lucía M.</strong>
+                <small>Alumna de demostración · Plan 8 clases</small>
+              </div>
+            </div>
+            <div class="fee-row">
+              <div>
+                <strong>Noviembre 2026</strong>
+                <div class="demo-note">Plan 8 clases · $18.000</div>
+              </div>
+              <span class="badge badge-ok">Pagada</span>
+            </div>
+            <div class="fee-row">
+              <div>
+                <strong>Diciembre 2026</strong>
+                <div class="demo-note">Plan 8 clases · $18.000</div>
+              </div>
+              <span class="badge badge-pend">Pendiente</span>
+            </div>
+            <div class="hero-actions" style="margin-top:18px">
+              <button class="btn btn-mp" type="button" id="btn-mp">Pagar con Mercado Pago</button>
+            </div>
+            <p class="demo-note">Botón de demostración: no cobra ni abre un checkout real.</p>
+          </div>
+        </div>
+        <div id="recordatorios">
+          <p class="section-kicker">Avisos</p>
+          <h2 class="section-title">Que no se olviden de la clase</h2>
+          <p class="section-lead">En tu estudio de verdad, los recordatorios salen solos por WhatsApp. Acá te mostramos cómo funciona.</p>
+          <div class="reminders">
+            <div class="step">
+              <div class="step-n">1</div>
+              <div>
+                <h3>Reserva confirmada</h3>
+                <p>En el momento, un mensaje: día, hora y qué llevar.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-n">2</div>
+              <div>
+                <h3>El día anterior</h3>
+                <p>Un aviso a la tarde: “mañana tenés Zumba a las 19.”</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-n">3</div>
+              <div>
+                <h3>Cuota por vencer</h3>
+                <p>Si la cuota está pendiente, el recordatorio incluye el link de pago.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <div class="wrap">
+        <p class="section-kicker">El estudio</p>
+        <h2 class="section-title">Una galería sin fotos prestadas</h2>
+        <p class="section-lead">En tu web van las fotos reales de tus clases. En esta demo usamos composiciones hechas con código, para no usar imágenes de otras personas ni bancos con copyright.</p>
+        <div class="gallery">
+          <figure class="art"><figcaption>Zumba Fitness</figcaption></figure>
+          <figure class="art"><figcaption>Ritmo latino</figcaption></figure>
+          <figure class="art"><figcaption>Stretch & mobility</figcaption></figure>
+          <figure class="art"><figcaption>Dance HIIT</figcaption></figure>
+          <figure class="art"><figcaption>Zumba Kids</figcaption></figure>
+          <figure class="art"><figcaption>Funcional con ritmo</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="preguntas">
+      <div class="wrap faq">
+        <p class="section-kicker">Preguntas</p>
+        <h2 class="section-title">Lo que más preguntan</h2>
+        <details open>
+          <summary>¿Esto es un estudio de verdad?</summary>
+          <p>No. Estudio Ritmo es un estudio inventado para mostrar cómo quedaría tu web. No hay un local con ese nombre detrás de esta página, ni alumnas reales.</p>
+        </details>
+        <details>
+          <summary>¿Cómo reservo un lugar?</summary>
+          <p>En Horarios, tocá “Reservar lugar”, escribí tu nombre y un WhatsApp. En la demo la reserva queda en este celular. En tu estudio, te llegaría a vos y a la alumna por WhatsApp.</p>
+        </details>
+        <details>
+          <summary>¿Las cuotas se pagan acá?</summary>
+          <p>En una web real, el botón de Mercado Pago abre el checkout y acredita la cuota. En esta demo el botón no cobra: solo muestra cómo se vería el paso.</p>
+        </details>
+        <details>
+          <summary>¿Quién armó esta web?</summary>
+          <p>La armó Nodo Ventas, para mostrarte el tipo de sitio que podemos hacer para tu estudio. Si te gusta, escribinos a nodoventas.ar@gmail.com.</p>
+        </details>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>Si tu estudio todavía anota los turnos a mano, esto te ahorra el ida y vuelta.</h2>
+        <p>Te armamos una web con tu nombre, tus horarios y tus precios. Mirá los paquetes o escribinos y lo vemos.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="oferta/">Ver paquetes</a>
+          <a class="btn btn-ghost" href="mailto:nodoventas.ar@gmail.com?subject=Quiero%20una%20web%20como%20la%20demo%20de%20Estudio%20Ritmo">Escribir a Nodo Ventas</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="nodo-banner">
+        <div>
+          <strong>Demo hecha por Nodo Ventas</strong>
+          <span>¿Querés una así para tu estudio? <a href="mailto:nodoventas.ar@gmail.com">nodoventas.ar@gmail.com</a></span>
+        </div>
+        <a class="btn btn-primary" href="oferta/">Ver oferta</a>
+      </div>
+      <p class="fine">Estudio Ritmo es un nombre de ficción. Galería generada con CSS. 2026 · Nodo Ventas.</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/5491100000000" id="btn-wa" data-demo="true">
+    <small>Botón demo</small>
+    Escribinos por WhatsApp
+  </a>
+
+  <div class="modal" id="modal-reserva" hidden>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="reserva-titulo">
+      <div id="reserva-form">
+        <h2 id="reserva-titulo">Reservar lugar</h2>
+        <p class="class-resume" id="reserva-resumen"></p>
+        <label for="nombre">Tu nombre</label>
+        <input id="nombre" name="nombre" autocomplete="name" required placeholder="Ej: Marina López">
+        <label for="whatsapp">WhatsApp</label>
+        <input id="whatsapp" name="whatsapp" inputmode="tel" autocomplete="tel" required placeholder="Ej: 11 5555-0000">
+        <p class="demo-note">En esta demo no se envía ningún mensaje. Los datos quedan solo en tu celular.</p>
+        <div class="sheet-actions">
+          <button class="btn btn-primary" type="button" id="btn-confirmar">Confirmar reserva</button>
+          <button class="btn btn-ghost" type="button" data-close>Cancelar</button>
+        </div>
+      </div>
+      <div class="confirm-box" id="reserva-ok" hidden>
+        <p class="section-kicker">Listo</p>
+        <h2>Lugar reservado</h2>
+        <p class="class-resume" id="ok-resumen"></p>
+        <div class="code" id="ok-codigo"></div>
+        <p>En un estudio real, te llegaría un WhatsApp de confirmación y un recordatorio el día anterior.</p>
+        <div class="sheet-actions" style="justify-content:center">
+          <button class="btn btn-gold" type="button" data-close>Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-aviso" hidden>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="aviso-titulo">
+      <h2 id="aviso-titulo">Esto es una demostración</h2>
+      <p id="aviso-texto" class="class-resume"></p>
+      <div class="sheet-actions">
+        <button class="btn btn-gold" type="button" data-close>Entendido</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
