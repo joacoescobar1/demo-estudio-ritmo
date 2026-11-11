@@ -80,12 +80,13 @@ p { margin: 0; }
 .nav { display: flex; gap: 6px; align-items: center; }
 .nav a {
   text-decoration: none; font-size: 14px; padding: 8px 10px; border-radius: 999px;
-  opacity: 0.8;
+  opacity: 0.8; white-space: nowrap;
 }
+.nav-inline { display: flex !important; position: static !important; background: transparent !important; padding: 0 !important; border: 0 !important; }
 .nav a:hover, .nav a:focus-visible { opacity: 1; background: var(--ink-3); }
 .nav-cta {
   background: var(--paper) !important; color: var(--ink) !important;
-  font-weight: 650; opacity: 1 !important; padding: 8px 14px !important;
+  font-weight: 650; opacity: 1 !important; padding: 8px 14px !important; flex-shrink: 0;
 }
 .menu-btn {
   display: none; background: transparent; border: 1px solid var(--line-strong);
@@ -373,3 +374,5 @@ input:focus { border-color: var(--gold); }
   html { scroll-behavior: auto; }
   .btn { transition: none; }
 }
+
+@media (max-width: 800px) { body { padding-bottom: 84px; } }
