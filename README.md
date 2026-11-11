@@ -1,8 +1,7 @@
 # Demo · Estudio Ritmo
 
-Sitio de demostración de **Nodo Ventas** para un estudio de Zumba y danza de ficción.
+Sitio de demostración de **Nodo Ventas**: web para un estudio de Zumba y danza con horarios por día, reserva de lugar, confirmación por WhatsApp y cuota con Mercado Pago (simulada).
 
-- La demo no representa un local real.
+- Estudio Ritmo es un estudio de ficción; no representa un local real.
+- Fotos: Unsplash (ver `CREDITS.md`).
 - Contacto: nodoventas.ar@gmail.com
-
-Publicado en GitHub Pages.
